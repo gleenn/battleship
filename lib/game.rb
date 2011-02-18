@@ -16,6 +16,8 @@ class Game
       break unless take_turn(first_name, second_board)
       break unless take_turn(second_name, first_board)
     end
+
+
   end
 
   private

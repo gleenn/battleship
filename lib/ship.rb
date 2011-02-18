@@ -14,13 +14,17 @@ class Ship
   end
 
   def collides_with?(ship)
-    x_range.each do |x|
-      y_range.each do |y|
-        return true if ship.x_range.include?(x) && ship.y_range.include?(y)
+    ship.y_range.each do |y|
+      ship.x_range.each do |x|
+        return true if hit?(y,x)
       end
     end
     false
   end
+
+ def hit?(y, x)
+   x_range.include?(x) && y_range.include?(y)
+ end
 
   def hit!(y, x)
     hits << [y,x]

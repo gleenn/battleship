@@ -99,4 +99,28 @@ describe Board do
       end
     end
   end
+
+  describe "#attack!" do
+    it "marks a miss if there is no ship there" do
+      @board.attack!(0,0)
+      @board.grid[0][0].should == "M"
+    end
+
+    it "marks the board as hit if there is a ship there" do
+      ship = @board.place_ship
+      @board.grid[ship.y_range.first][ship.x_range.first].should == "*"
+
+      @board.attack!(ship.y_range.first, ship.x_range.first)
+
+      @board.grid[ship.y_range.first][ship.x_range.first].should == "H"
+    end
+    
+    it "makes the ship know its been hit" do
+      ship = @board.place_ship
+      @board.grid[ship.y_range.first][ship.x_range.first].should == "*"
+      @board.attack!(ship.y_range.first, ship.x_range.first)
+
+      ship.hits.should be_include([ship.y_range.first, ship.x_range.first])
+    end
+  end
 end

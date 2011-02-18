@@ -63,6 +63,26 @@ class Board
     ! ships.all? &:sunk?
   end
 
+  def attack!(y, x)
+    made_hit = false
+    ships.each do |ship|
+      if ship.hit?(y,x)
+        ship.hit!(y,x)
+        mark_hit(y, x)
+        made_hit = true
+      end
+    end
+    mark_miss(y, x) unless made_hit
+  end
+
+  def mark_miss(y, x)
+    grid[y][x] = "M"
+  end
+
+  def mark_hit(y, x)
+    grid[y][x] = "H"
+  end
+
   def mark_ship(ship)
     ship.x_range.each do |x|
       ship.y_range.each do |y|
