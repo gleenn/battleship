@@ -26,7 +26,7 @@ class Board
   end
 
   def generate(rng=Kernel)
-    dy = rand(1)
+    dy = rand(2)
     dx = 1 - dy
 
     ship_length = 5
@@ -39,11 +39,4 @@ class Board
 
     self
   end
-
-  private
-
-  def setup_boards
-
-  end
-
 end

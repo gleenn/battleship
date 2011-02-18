@@ -27,16 +27,16 @@
       <file leaf-file-name="board_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/board_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="20" selection-start="632" selection-end="632" vertical-scroll-proportion="-19.333334">
+            <state line="24" column="20" selection-start="451" selection-end="451" vertical-scroll-proportion="-14.518518">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="board.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="board.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/board.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="9" selection-start="112" selection-end="112" vertical-scroll-proportion="8.0">
+            <state line="41" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.83229816">
               <folding />
             </state>
           </provider>
@@ -51,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1" selection-start="186" selection-end="186" vertical-scroll-proportion="0.16770187">
+            <state line="6" column="1" selection-start="186" selection-end="186" vertical-scroll-proportion="-4.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
       <file leaf-file-name="game_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/game_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="36" selection-start="65" selection-end="65" vertical-scroll-proportion="-0.6666667">
+            <state line="12" column="7" selection-start="223" selection-end="223" vertical-scroll-proportion="-8.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +90,7 @@
       <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="-8.0">
+            <state line="30" column="17" selection-start="514" selection-end="514" vertical-scroll-proportion="-20.0">
               <folding />
             </state>
           </provider>
@@ -110,12 +110,12 @@
         <option value="$PROJECT_DIR$/spec/battleship_spec.rb" />
         <option value="$PROJECT_DIR$/battleship.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/lib/game.rb" />
-        <option value="$PROJECT_DIR$/lib/board.rb" />
-        <option value="$PROJECT_DIR$/spec/game_spec.rb" />
         <option value="$PROJECT_DIR$/spec/suite.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/board_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/game_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/game.rb" />
+        <option value="$PROJECT_DIR$/lib/board.rb" />
       </list>
     </option>
   </component>
@@ -493,20 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="-8.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/game_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="36" selection-start="65" selection-end="65" vertical-scroll-proportion="-0.6666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/suite.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="3" selection-start="137" selection-end="137" vertical-scroll-proportion="-3.3333333">
@@ -514,23 +500,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/board.rb">
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="112" selection-end="112" vertical-scroll-proportion="8.0">
+        <state line="6" column="1" selection-start="186" selection-end="186" vertical-scroll-proportion="-4.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/game_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="223" selection-end="223" vertical-scroll-proportion="-8.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="17" selection-start="514" selection-end="514" vertical-scroll-proportion="-20.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/board_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="20" selection-start="632" selection-end="632" vertical-scroll-proportion="-19.333334">
+        <state line="24" column="20" selection-start="451" selection-end="451" vertical-scroll-proportion="-14.518518">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/lib/board.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="186" selection-end="186" vertical-scroll-proportion="0.16770187">
+        <state line="41" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.83229816">
           <folding />
         </state>
       </provider>

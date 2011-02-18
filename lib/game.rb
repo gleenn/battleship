@@ -2,6 +2,7 @@ class Game
   def start
       setup_boards
       puts to_s
+
   end
 
   private
