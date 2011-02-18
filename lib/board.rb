@@ -1,3 +1,6 @@
+dir = File.dirname(__FILE__)
+require "#{dir}/ship"
+
 class Board
   attr_reader :height, :width
   attr_accessor :grid, :ships

@@ -1,8 +1,10 @@
+dir = File.dirname(__FILE__)
+require "#{dir}/board"
+
 class Game
   def start
       setup_boards
       puts to_s
-
   end
 
   private
@@ -18,18 +20,15 @@ class Game
     puts "Enter your name"
     name = gets.chomp
 
-    board = Board.new(10,10).generate
-    puts board
-    puts
-    puts "Do you like your board?"
-
-    while gets.chomp != "y"
-      board = Board.new(10,10).generate
+    begin
+      board = Board.new(10,10).generate(5)
       puts board
       puts
-      puts "Do you like your board?"
-    end
+      puts "Do you like your board? (y/N)"
+    end while gets.chomp != "y"
 
     [name, board]
   end
+
+
 end
