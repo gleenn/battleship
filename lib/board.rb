@@ -50,12 +50,17 @@ class Board
 
     ships << ship
     mark_ship(ship)
+    ship
   end
 
   def valid_place_for?(ship)
     ! ships.any? do |ship_on_board|
       ship_on_board.collides_with?(ship)
     end
+  end
+
+  def ships_left?
+    ! ships.all? &:sunk?
   end
 
   def mark_ship(ship)
