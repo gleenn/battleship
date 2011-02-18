@@ -3,6 +3,7 @@ require "#{dir}/board"
 
 class Game
   attr_reader :first_name, :second_name, :first_board, :second_board
+  SHIPS_PER_BOARD = 1
 
   def start
     setup_boards
@@ -13,15 +14,17 @@ class Game
       break unless take_turn(second_name, first_board)
     end
 
-
+    puts "Game Over!!!!"
   end
 
   private
 
   def take_turn(name, other_board)
     coords = prompt_to_hit(name)
-    other_board.attack!(*coords)
-    other_board.ships_left?
+    puts "#{name} made a hit!" if other_board.attack!(*coords)
+    ships_left = other_board.ships_left?
+    puts "#{name} won!\n" unless ships_left
+    ships_left
   end
 
   def output_game
@@ -30,6 +33,7 @@ class Game
     puts
     puts "#{second_name}'s Board:"
     puts second_board
+    puts
   end
 
   def prompt_to_hit(name)
@@ -51,7 +55,7 @@ class Game
     name = gets.chomp
 
     begin
-      board = Board.new(10, 10).generate(5)
+      board = Board.new(10, 10).generate(SHIPS_PER_BOARD)
       puts board
       puts
       puts "Do you like your board? (y/N)"
@@ -59,6 +63,4 @@ class Game
 
     [name, board]
   end
-
-
 end

@@ -24,10 +24,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="board_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="board_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/board_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.2795031">
+            <state line="54" column="29" selection-start="1190" selection-end="1190" vertical-scroll-proportion="-11.333333">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="board.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/board.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="12" selection-start="1463" selection-end="1463" vertical-scroll-proportion="-8.518518">
+            <state line="86" column="21" selection-start="1591" selection-end="1591" vertical-scroll-proportion="-15.851851">
               <folding />
             </state>
           </provider>
@@ -105,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="4" selection-start="421" selection-end="421" vertical-scroll-proportion="-14.666667">
+            <state line="25" column="24" selection-start="591" selection-end="591" vertical-scroll-proportion="0.58074534">
               <folding />
             </state>
           </provider>
@@ -133,9 +133,9 @@
         <option value="$PROJECT_DIR$/spec/game_spec.rb" />
         <option value="$PROJECT_DIR$/spec/ship_spec.rb" />
         <option value="$PROJECT_DIR$/lib/ship.rb" />
-        <option value="$PROJECT_DIR$/lib/game.rb" />
-        <option value="$PROJECT_DIR$/lib/board.rb" />
         <option value="$PROJECT_DIR$/spec/board_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/board.rb" />
+        <option value="$PROJECT_DIR$/lib/game.rb" />
       </list>
     </option>
   </component>
@@ -558,23 +558,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/game.rb">
+    <entry file="file://$PROJECT_DIR$/spec/board_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="421" selection-end="421" vertical-scroll-proportion="-14.666667">
+        <state line="54" column="29" selection-start="1190" selection-end="1190" vertical-scroll-proportion="-11.333333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/board.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="12" selection-start="1463" selection-end="1463" vertical-scroll-proportion="-8.518518">
+        <state line="86" column="21" selection-start="1591" selection-end="1591" vertical-scroll-proportion="-15.851851">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/board_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.2795031">
+        <state line="25" column="24" selection-start="591" selection-end="591" vertical-scroll-proportion="0.58074534">
           <folding />
         </state>
       </provider>
