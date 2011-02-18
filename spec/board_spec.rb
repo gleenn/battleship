@@ -10,8 +10,12 @@ describe Board do
     @board = Board.new(10, 10)
   end
 
-  it "can be displayed" do
-    board.to_s.should == ("#"*10+"\n")*10
+  describe "#to_s" do
+    it "can be displayed" do
+      board.to_s.should == ("#"*10+"\n")*10
+    end
+
+    it "marks hits and misses and ships"
   end
 
   describe "#initialize" do
@@ -102,17 +106,19 @@ describe Board do
 
   describe "#attack!" do
     it "marks a miss if there is no ship there" do
-      @board.attack!(0,0)
+      hit = @board.attack!(0,0)
       @board.grid[0][0].should == "M"
+      hit.should_not be
     end
 
     it "marks the board as hit if there is a ship there" do
       ship = @board.place_ship
       @board.grid[ship.y_range.first][ship.x_range.first].should == "*"
 
-      @board.attack!(ship.y_range.first, ship.x_range.first)
+      hit = @board.attack!(ship.y_range.first, ship.x_range.first)
 
       @board.grid[ship.y_range.first][ship.x_range.first].should == "H"
+      hit.should be
     end
     
     it "makes the ship know its been hit" do

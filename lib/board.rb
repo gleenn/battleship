@@ -23,7 +23,7 @@ class Board
     output = ""
     @grid.each do |row|
       row.each do |column|
-        output << (column.nil? ? "#" : "*")
+        output << (column.nil? ? "#" : column)
       end
       output << "\n"
     end
@@ -73,6 +73,7 @@ class Board
       end
     end
     mark_miss(y, x) unless made_hit
+    made_hit
   end
 
   def mark_miss(y, x)

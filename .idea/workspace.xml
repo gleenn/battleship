@@ -27,7 +27,7 @@
       <file leaf-file-name="board_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/board_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="20" selection-start="2438" selection-end="2438" vertical-scroll-proportion="0.33229813">
+            <state line="47" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.2795031">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="board.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/board.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="4" selection-start="1452" selection-end="1452" vertical-scroll-proportion="-10.518518">
+            <state line="75" column="12" selection-start="1463" selection-end="1463" vertical-scroll-proportion="-8.518518">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,7 @@
       <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="4" selection-start="517" selection-end="517" vertical-scroll-proportion="-15.185185">
+            <state line="22" column="4" selection-start="421" selection-end="421" vertical-scroll-proportion="-14.666667">
               <folding />
             </state>
           </provider>
@@ -132,8 +132,8 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/game_spec.rb" />
         <option value="$PROJECT_DIR$/spec/ship_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/game.rb" />
         <option value="$PROJECT_DIR$/lib/ship.rb" />
+        <option value="$PROJECT_DIR$/lib/game.rb" />
         <option value="$PROJECT_DIR$/lib/board.rb" />
         <option value="$PROJECT_DIR$/spec/board_spec.rb" />
       </list>
@@ -451,7 +451,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="115" y="146" width="2256" height="1220" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -460,7 +460,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1577061" sideWeight="0.62333035" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37666965" sideWeight="0.99955195" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37666965" sideWeight="0.99955195" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -551,13 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="517" selection-end="517" vertical-scroll-proportion="-15.185185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ship.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="31" selection-start="432" selection-end="432" vertical-scroll-proportion="-12.0">
@@ -565,16 +558,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="4" selection-start="421" selection-end="421" vertical-scroll-proportion="-14.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/board.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="4" selection-start="1452" selection-end="1452" vertical-scroll-proportion="-10.518518">
+        <state line="75" column="12" selection-start="1463" selection-end="1463" vertical-scroll-proportion="-8.518518">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/board_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="20" selection-start="2438" selection-end="2438" vertical-scroll-proportion="0.33229813">
+        <state line="47" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.2795031">
           <folding />
         </state>
       </provider>
