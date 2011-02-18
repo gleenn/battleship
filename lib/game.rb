@@ -10,6 +10,8 @@ class Game
   def setup_boards
     first_name, first_board = setup_board
     second_name, second_board = setup_board
+
+    
   end
 
   def setup_board

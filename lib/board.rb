@@ -1,11 +1,13 @@
 class Board
-  attr_reader :grid, :height, :width
+  attr_reader :height, :width
+  attr_accessor :grid, :ships
 
   def initialize(height, width)
     @height = height
-    @width = width
+    @width  = width
 
-    @grid = Array.new(@height){Array.new(@width)}
+    @grid   = Array.new(@height) { Array.new(@width) }
+    @ships = []
 
     @grid.each_with_index do |row, y|
       row.each_with_index do |column, x|
@@ -25,18 +27,39 @@ class Board
     output
   end
 
-  def generate(rng=Kernel)
-    dy = rand(2)
-    dx = 1 - dy
-
-    ship_length = 5
-    start_y = rng.rand(@height-(dy*ship_length))
-    start_x = rng.rand(@width-(dx*ship_length))
-
-    5.times do |i|
-      @grid[start_y+(i*dy)][start_x+(i*dx)] = "*"
+  def generate(num_ships)
+    num_ships.times do
+      ship = place_ship
     end
 
     self
+  end
+
+  def place_ship
+    begin
+      dy          = rand(2)
+      dx          = 1 - dy
+      start_y     = rand(@height-(dy*Ship::LENGTH))
+      start_x     = rand(@width-(dx*Ship::LENGTH))
+
+      ship = Ship.new(start_y..(start_y+(dy*(Ship::LENGTH-1))), start_x..(start_x+(dx*(Ship::LENGTH-1))))
+    end while !valid_place_for?(ship)
+
+    ships << ship
+    mark_ship(ship)
+  end
+
+  def valid_place_for?(ship)
+    ! ships.any? do |ship_on_board|
+      ship_on_board.collides_with?(ship)
+    end
+  end
+
+  def mark_ship(ship)
+    ship.x_range.each do |x|
+      ship.y_range.each do |y|
+        grid[y][x] = "*"
+      end
+    end
   end
 end
