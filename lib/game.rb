@@ -22,6 +22,7 @@ class Game
   def take_turn(name, other_board)
     coords = prompt_to_hit(name)
     puts "#{name} made a hit!" if other_board.attack!(*coords)
+
     ships_left = other_board.ships_left?
     puts "#{name} won!\n" unless ships_left
     ships_left

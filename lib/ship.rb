@@ -1,14 +1,17 @@
 require 'set'
 
 class Ship
-  LENGTH = 5
+  LENGTH = 1
 
   attr_reader :x_range, :y_range, :hits
 
   def initialize(x_range, y_range)
     @x_range = x_range
     @y_range = y_range
-    raise "Ship not length 5" if [(x_range.end - x_range.first + 1), (y_range.end - y_range.first + 1)].max != Ship::LENGTH
+    if [(x_range.end - x_range.first + 1),
+        (y_range.end - y_range.first + 1)].max != Ship::LENGTH
+      raise "Ship not length 5"
+    end
 
     @hits = Set.new
   end
