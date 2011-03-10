@@ -44,6 +44,23 @@ describe Ship do
     end
   end
 
+  describe "#hit?" do
+    it "should return true if the coordinate of the hit intersects with the ship" do
+      @ship.should be_hit(1, 0)
+      @ship.should be_hit(2, 0)
+      @ship.should be_hit(3, 0)
+      @ship.should be_hit(4, 0)
+      @ship.should be_hit(5, 0)
+    end
+
+    it "should return false if the coordinate of the hit doesn't intersect with the ship" do
+      @ship.should_not be_hit(1, 1)
+      @ship.should_not be_hit(0, 3)
+      @ship.should_not be_hit(9, 5)
+      @ship.should_not be_hit(1, 1)
+    end
+  end
+
   describe "#sunk?" do
     before do
       @ship = Ship.new(0..0, 1..5)

@@ -1,7 +1,7 @@
 require 'set'
 
 class Ship
-  LENGTH = 1
+  LENGTH = 5
 
   attr_reader :x_range, :y_range, :hits
 
