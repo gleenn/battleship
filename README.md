@@ -4,7 +4,9 @@ This code may not be used under any circumstances without written permission, it
 
 Super simple battleship game which still has some issues.
 
-suite spec not working...
-requires kinda messed up but working
 
-run using battleship.rb
+run:
+ruby battleship.rb
+
+run tests:
+rspec spec
