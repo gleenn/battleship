@@ -3,7 +3,7 @@ require "#{dir}/board"
 
 class Game
   attr_reader :first_name, :second_name, :first_board, :second_board
-  SHIPS_PER_BOARD = 1
+  SHIPS_PER_BOARD = 4
 
   def start
     setup_boards
